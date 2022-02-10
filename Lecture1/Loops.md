@@ -75,7 +75,7 @@ a specified number of times, in this example 10.
 	- The Boolean expression is checked.
 		- If it evaluates to true, the body of the loop executes.
 		- If it evaluates to false, the body of the loop does not execute.
-	- The counter varialbe is incremented, and then the 
+	- The counter variable is incremented, and then the 
 	Boolean expression is checked again, etc.
 
 ## Usecases for loops:
@@ -89,5 +89,3 @@ a specified number of times, in this example 10.
 - for
 	- Use when you want a loop to repeat a discrete number of times,
 	though you may not know the number at the moment the program is compiled.
-
- 
