@@ -63,11 +63,12 @@ input (array) -> | algorithms | -> output
 - BIG O: O(n)
 
 Pseudo Code:
-
+```
 For I from 0 to n-1
 	If number behind i'th door
 		return true
 Return false
+```
 
 - Upper bound is O(n)
 - Lower bound is Ω(1)
@@ -76,7 +77,7 @@ Return false
 - BIG O: O(log n)
 
 Pseudo Code:
-
+```
 If no door
 	return false
 If number behind middle door
@@ -85,6 +86,7 @@ Else if number < middle door
 	search left half
 Else is number > middle door
 	search right half
+```
 
 - Upper bound O(log n)
 - Lower bound is Ω(1)
@@ -114,8 +116,10 @@ person; // variable name for the new datatye
 
 unsorted -> | algorithm | -> sorted
 
+```
 // unsorted array of numbers -> sorted array of numbers
 6 3 8 5 2 7 4 1 -> | sort algorithm | -> 1 2 3 4 5 6 7 8
+````
 
 - Concerns of sorting algorithms
 	- correctness
@@ -144,18 +148,21 @@ BIG O Notation => O(n²)
 - Ω(n)
 
 Pseudo code:
+```
 Repeat until sorted
 	For i from 0 to n-2
 		If i'th and i'th elements out of order
 			swap them
+```
 
+```
 Repeat n-1 times
 	For i from 0 to n-2
 		If i'th and i+1'th elements out of order
 			Swap them
 		If no swaps
 			Quit
-
+```
 (n-1) x (n-1)
 n² - 1n - 1n + 1
 n² - 2n + 1
@@ -210,13 +217,14 @@ BIG O: O(n log n)
 Ω(n log n)
 
 Pseudo code:
+```
 If only one number
 	Quit
 Else	
 	Sort left half of numbers
 	Sort right half of numbers
 	Merge sorted halves
-
+```
 log n, both Ω and O are log n in merge sort
 
 ---
