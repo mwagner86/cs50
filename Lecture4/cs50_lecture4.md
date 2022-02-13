@@ -83,4 +83,79 @@ int *p = &n; stores the address of int n
 
 there is no datatype called "string" in c, unless you use a library like <cs50.h>
 
-Break min 44
+## pointer arithmetic
+
+- char * gives you a pointer variable that points to a character.
+- you can run simple mathematic operation on pointers, see address2.c
+
+```
+t[i] = s[i];
+*(t + 1) = *(s + 1);
+```
+would be the same: square bracket notation is the same thing as pointer arithmetics
+
+## malloc()
+- memory allocation
+- allocates memory and gives you the address of the first byte of memory which you can now use
+
+## Difference between NUL (\0) and NULL
+
+- NULL represents a NULL pointer, the absence of an address, a bogus address
+technically the address zero.
+you use NULL in the context of pointers
+
+- you use \0 in the context of characters
+
+## strcpy()
+- string copy
+
+## free()
+- when you're done with memory it should be your best practice to free it.
+- the opposite of malloc is a function free, which takes as its input,
+whatever the output of malloc() was.
+- the return value of malloc is the address of the first byte of memory that it has allocated for you.
+- it's up to you to remember how many bytes you ask you
+- in the case of free, tell free the address that malloc gave you.
+
+- any time you use malloc, you have to use free.
+
+
+## valgrind
+- a program to detect if you're doing anything wrong with memory
+- where you touched memory you shouldn't have
+- checks for memory leaks, if you forgot to use free()
+
+-Usage:
+	- valgrind ./executable
+
+Problem
+```
+int main(void)
+{
+	int *x;
+	int *y;
+
+	x = malloc(sizeof(int));
+
+	*x = 42; // at that address place 42
+	*y = 13; // go to the address in y and put 13 there. This might be a bogus address and odds are program will crash: SEGFAULT
+
+	y = x;
+
+	*y = 13;
+}
+
+```
+- if you try to dereference an uninitialized variable your program may very well crash!
+
+# Garbage values
+ - if you yourself not put a value in memory, you should assume
+ there is a "garbage value" - you don't know what there is.
+ - over time your computer memory contains remnants of all the variables you ever used in your programs.
+
+ - if you're trying to dereference a garbage value, bad things happen
+
+
+ - Global variables are generally initialized to 0.
+
+ Break 1:48 Memory layout
