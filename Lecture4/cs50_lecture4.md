@@ -153,9 +153,54 @@ int main(void)
  there is a "garbage value" - you don't know what there is.
  - over time your computer memory contains remnants of all the variables you ever used in your programs.
 
- - if you're trying to dereference a garbage value, bad things happen
+ - if you're trying to dereference a garbage value, bad things happen.
 
 
  - Global variables are generally initialized to 0.
 
  Break 1:48 Memory layout
+
+ ## Memory
+
+ - machine code
+ - globals
+ 	-(global varialbes / constants)
+ - heap
+	- (big chunk of memory that malloc uses)
+
+- stack
+	- used by functions
+	- dynamic place where memory keeps getting used and reused
+
+---
+
+- heap overflow
+- stack overflow
+
+with recursion there is an inherant danger of touching memory you shouldn't.
+the risk of a segmentation fault.
+
+- buffer overflow
+	- for example, if you allocate an array and go too far past the end of it.
+	- use malloc and go further the end of memory that you allocated
+	- going beyond the boundary of the array.
+
+- buffer
+ 	- finite resource, a chunck / an array of memory.
+
+## cs50 lib
+
+- get_char
+- get_double
+- get_float
+- get_int
+- get_long
+- get_string
+...
+
+## scanf
+- oldschool function
+- not designed to be self defensive
+
+## file I/O
+- file input / output
