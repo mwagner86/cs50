@@ -1,12 +1,14 @@
 ## Hexadecimals
 
+https://www.youtube.com/watch?v=u_atXp-NF6w
+
 - Most Western cultures use the **decimal system**, aka base-10, to represent numeric data
-	0	1	2	3	4	5	6	7	8	9 
+	-	0	1	2	3	4	5	6	7	8	9 
 
 - As we know, computers use the **binary system**, aka base-2, to represent numberic
 (and indeed all data)
 
-	0 	1
+	-	0 	1
 
 - As computer scientists, it's useful to be able to express data the same way the computer does.
 - The problem, is that trying to parse a huge chain of 0s and 1s can be quite difficult.
@@ -15,7 +17,9 @@
 on a compter's system.
 
 0	1	2 	3 	4	5	6	7	8	9	a	b	c	d	e	f
+
 or
+
 0	1	2 	3 	4	5	6	7	8	9	A	B	C	D	E	F
 
 ---
@@ -59,9 +63,11 @@ no | 16²	| 16¹ | 16º
 	- Pad the leftmost group with extra 0 bits at the front if necessary.
 - Then use the chart or your memory to convert those bits into something a bit more concisive.
 
-01000110101000101011100100111101
+01000110101000101011100100111101 = 0x46A2B93D
 Digit: | 8th | 7th | 6th | 5th | 4th | 3rd | 2th | 1st
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 binary:	|	0100 	| 0110	| 1010	| 0010 	| 1011	| 1001	| 0011	| 1101
 decimal: |	4	| 6	| 10	| 2	| 11	| 9	| 3	| 13
 hexadecimal: |	4	| 6	| A	| 2	| B	| 9	| 3	| D
+
+- Memory addresses in our system are represented as hexadecimals.
