@@ -49,9 +49,10 @@ different combinations, and each of those combinations maps to a single hexadeci
 - Just like binary has place values (1, 2, 4 ,8 ...) and decimal does (1, 10, 100, 1000...),
  so does hexadecimals.
 
---- | --- | ---
-prefix | 256 | 16 | 1
-prefix | 16²	| 16¹ | 16º
+Prefix | Power² | Power¹ | Powerº
+--- | --- | --- | ---
+no | 256 | 16 | 1
+no | 16²	| 16¹ | 16º
  0x | **3** | **9** | **7**
 
 - To convert a binary number to hexadecimal, group four binary digits (bits) together from right to left.
@@ -59,6 +60,7 @@ prefix | 16²	| 16¹ | 16º
 - Then use the chart or your memory to convert those bits into something a bit more concisive.
 
 01000110101000101011100100111101
+Digit: | 8th | 7th | 6th | 5th | 4th | 3rd | 2th | 1st
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 binary:	|	0100 	| 0110	| 1010	| 0010 	| 1011	| 1001	| 0011	| 1101
 decimal: |	4	| 6	| 10	| 2	| 11	| 9	| 3	| 13
