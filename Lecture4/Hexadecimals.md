@@ -26,6 +26,7 @@ different combinations, and each of those combinations maps to a single hexadeci
 ### Chart
 
 **Decimal** | **Binary** | **Hexadecimal**
+--- | --- | ---
 0 | 0000 | 0x0
 1 | 0001 | 0x1
 2 | 0010 | 0x2
@@ -48,6 +49,7 @@ different combinations, and each of those combinations maps to a single hexadeci
 - Just like binary has place values (1, 2, 4 ,8 ...) and decimal does (1, 10, 100, 1000...),
  so does hexadecimals.
 
+--- | --- | ---
 prefix | 256 | 16 | 1
 prefix | 16²	| 16¹ | 16º
  0x | **3** | **9** | **7**
@@ -57,7 +59,7 @@ prefix | 16²	| 16¹ | 16º
 - Then use the chart or your memory to convert those bits into something a bit more concisive.
 
 01000110101000101011100100111101
-
-binary: | 0100 |	| 0110 |	| 1010 |	| 0010 | 	| 1011 |	| 1001 |	| 0011 |	| 1101 |
-decimal:	| 4 |	| 6 |	| 10 |	| 2 |	| 11 |	| 9 |	| 3 |	| 13 |
-hexadecimal:	 | 4 |	| 6 |	| A |	| 2 |	| B |	| 9 |	| 3 |	| D |
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+binary:	|	0100 	| 0110	| 1010	| 0010 	| 1011	| 1001	| 0011	| 1101
+decimal: |	4	| 6	| 10	| 2	| 11	| 9	| 3	| 13
+hexadecimal: |	4	| 6	| A	| 2	| B	| 9	| 3	| D
