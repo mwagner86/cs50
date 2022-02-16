@@ -63,8 +63,8 @@ int* pK;
 pk = &k;
 
 | --- | ---
-k | 5 |
-pk |0x80C74820|
+k | 5
+pk | 0x80C74820
 
 - pk has the information where to find k in memory.
 - pk has an arrow in it, at the very tip of it we find the location in memory where k lives
