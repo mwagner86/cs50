@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=XISnO2YhnsY
 
-- Pointer provide an alternative way to pass data between function.s.
+- Pointer provide an alternative way to pass data between functions.
 	- Recall that up to this point, we have passed all data **by value**,
 	with one exception.
 	- When we pass data by value, we only pass a copy of that data.
@@ -115,9 +115,9 @@ allowing you to manipulate it at will.
 Having their address isn't enough. You need to go to the address and only then can
 you interact with them.
 
--The way to go to the address is to use *, the dereference operator.
+- The way to go to the address is to use *, the dereference operator.
 
-If you try to dereference a pointer whose value is NULL (nothing in this context)
+- If you try to dereference a pointer whose value is NULL (nothing in this context)
 you get a **Segmentation fault**
 
 - Surprisingly, this is actually good behavior!
