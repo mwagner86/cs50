@@ -19,14 +19,13 @@ while the program is already running.
 
 
 | **text**	|
-| ------------- |
+| :-------------: |
 |	initialized data	|
-| ------------- |
 |	uninitialized data	|
-|	:heap:	|
-|	..		|
-|	..		|
-|	..		|
-|	:stack:	|
-| ------------- |
+|	heap	|
+|	...		|
+|	...		|
+|	...		|
+| 	stack 	|
+
 |	environmental variables	|
