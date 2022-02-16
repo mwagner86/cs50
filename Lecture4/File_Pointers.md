@@ -28,7 +28,10 @@ The file manipulation all live in <stdio.h>
 - Opens a file and returns a file pointer to it.
 - Always check the return value to make sure you don't get back NULL.
 
-- FILE* ptr = fopen(<filename>, <operation>);
+```
+FILE* ptr = fopen(<filename>, <operation>);
+```
+
 Examples:
 - FILE* ptr1 = fopen("file1.txt", "r")
 	-r for read.
@@ -40,7 +43,9 @@ Examples:
 ### 2. fclose()
 - Closes the file pointed to by the given file pointer.
 
-- fclose (<file pointer>);
+```
+fclose (<file pointer>);
+```
 
 Example:
 - fclose(ptr1);
@@ -51,7 +56,9 @@ Example:
 - Note: The operation of the file pointer passed in as a paramter must be "r" for read,
 or you will suffer an error
 
-- char ch = fgetc(<file pointer>);
+```
+char ch = fgetc(<file pointer>);
+```
 
 Example:
 char ch =fgetc(ptr1);
@@ -82,7 +89,9 @@ does just this.
 - Note: The operation of the file pointer passed in as a parameter must be "w" for write
 or "a" for append, or you will suffer an error.
 
-- fputc(<character>, <file pointer>);
+```
+fputc(<character>, <file pointer>);
+```
 
 Example:
 - fputc('A', ptr2);
@@ -109,7 +118,9 @@ in a buffer (usually an array) pointed to by <buffer>.
 - Note: The operation of the file pointer passed in as a parameter must be "r" for read,
 or you will suffer an error.
 
-- fread(<buffer>, <size>, <qty>, <file pointer>);
+```
+fread(<buffer>, <size>, <qty>, <file pointer>);
+```
 
 Example:
 - int arr[10];
@@ -139,8 +150,9 @@ Example:
 Note: The operation of the file pointer passed in as a parameter must be "w" for write or 
 "a" for append, or oyu will suffer an error.
 
-- fwrite (<buffer>, <size>, <qty>, <file pointer>);
-
+```
+ fwrite (<buffer>, <size>, <qty>, <file pointer>);
+```
 Example:
 - int arr[10];
 - fwrite (arr, sizeof(int), 10, ptr);
