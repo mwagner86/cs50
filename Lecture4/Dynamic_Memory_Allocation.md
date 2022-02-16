@@ -27,5 +27,4 @@ while the program is already running.
 |	...		|
 |	...		|
 | 	stack 	|
-
 |	environmental variables	|
