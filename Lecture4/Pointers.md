@@ -62,6 +62,7 @@ k = 5
 int* pK;
 pk = &k;
 
+var	| value
 | --- | ---
 k | 5
 pk | 0x80C74820
