@@ -1,5 +1,7 @@
 ## Defining Custom Types
 
+https://www.youtube.com/watch?v=crxfzK3Oc9M
+
 - The C keyword **typedef** provides a way to create a shorthand
 or rewritten name for data types.
 

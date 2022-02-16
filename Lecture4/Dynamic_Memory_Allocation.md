@@ -1,5 +1,7 @@
 ## Dynamic Memory Allocation
 
+https://www.youtube.com/watch?v=xa4ugmMDhiE
+
 - We've seen one way to work with pointers,
 namely pointing a pointer variable at another variable that already exists in our system.
 	- This requires us to know exactly how much memory our system will need at the moment our program
