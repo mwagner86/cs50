@@ -130,9 +130,10 @@ you get a **Segmentation fault**
 
 ---
 
-``` int* p;
+```
+int* p;
 // or
-	int *p; 
+int *p; 
 // same thing
 ```
 
@@ -148,10 +149,13 @@ and the variable name.
 ```
 int* px, py; pz;
 // will give you one pointer of int type and int type variables py and pz. Prolly not what you intended.
+
 int* pa, *pb, *pc;
 // will give you 3 pointer-to-int.
+
 int *pa, *pb, *pc;
-// also 3 pointer-to-int. This'll prevent any confusion that you might get from declaring multiple variables at once on the same line
+// also 3 pointer-to-int.
+// This'll prevent any confusion that you might get from declaring multiple variables at once on the same line
 ```
 
 - Bit of a syntactic mess you have to work through. A flaw of the syntax.
