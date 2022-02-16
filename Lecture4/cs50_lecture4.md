@@ -1,6 +1,6 @@
 ## Lecture 4 Week 5
 
-[Youtube Video](https://www.youtube.com/watch?v=NKTfNv2T0FE "Lecture 3 - Memory")
+[Youtube Video](https://www.youtube.com/watch?v=NKTfNv2T0FE "Lecture 4 - Memory")
 
 ## Playlist 2020
 https://www.youtube.com/watch?v=YoXxevp1WRQ&list=PLhQjrBD2T382_R182iC2gNZI9HzWFMC_8
