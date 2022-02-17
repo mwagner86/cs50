@@ -102,4 +102,9 @@ O(n)
 	- if you don't care about sorted order.
 
 Break: min 43
-list.c
+
+
+## realloc()
+- will hand you a new chunk of memory that will be big enough for the new values.
+
+Break min 58.
