@@ -19,3 +19,87 @@ https://www.youtube.com/watch?v=YoXxevp1WRQ&list=PLhQjrBD2T382_R182iC2gNZI9HzWFM
 
 ## Notes:
 
+- array 
+	- contiguous blocks of memory
+	- not easily resizable
+
+- adding elements to an array
+O(n)
+Ω(1)
+
+
+- struct
+- . - dot operator
+- * - dereference operator
+
+- -> . and * operator combined
+- 0x0 = NULL, absence of an address
+
+## Linked list
+
+- list of numbers that are somehow linked together.
+- a collection of nodes that are connected by pointers.
+- the trade-off is to use more memory.
+
+```
+typedef struct
+{
+	string name;
+	string number;
+}
+person;
+```
+
+```
+
+typedef struct node
+{
+	int number;
+	struct node *next;
+}
+node;
+
+```
+
+- a node does not exist until that last line of code is executed
+- you can add an additional word after the keyword struct
+- typedef struct node is a hind for the compiler, similar to prototyping,
+something called a struct node is going to exist.
+- you can then use it inside that datastructure and call it "next".
+- structure node is created.
+
+## Linked list demo
+
+- you need a pointer to start, to point at the first node
+- use malloc to allocate dynamically
+- everytime you create a new node you allocate memory for it
+- nodes can be anywhere in the computers memory
+- you cannot use binary search because of that.
+- Linked list is a dynamic data structure, you allocate memory whereever it is availabe
+and you remember where that is by "stitching" things together with pointers.
+
+```
+node *list = NULL;
+node *n = malloc (sizeof(node)); 
+// malloc takes one argument, the number of bytes you want to allocate dynamically,
+// and it returns to you the address of the first of those bytes.
+// malloc return always an address, so for storing that address you need *n (or any other name)
+
+if (n != NULL)
+// any time in C, when you call a function that returns to you a pointer, you should almost 
+// always check if it is NULL or not NULL. You do not want to touch it, if it is NULL.
+// NULL means there is no valid address here.
+{
+	(*n).number = 1; // . operator go inside of that structure and inside of that variable called number
+}
+```
+- see linked_list_demo.c: not final, careful!
+
+- Running time of searching a linked list:
+O(n)
+- Running time of inserting into a linked list
+0(1)
+	- if you don't care about sorted order.
+
+Break: min 43
+list.c
