@@ -68,6 +68,27 @@ something called a struct node is going to exist.
 - you can then use it inside that datastructure and call it "next".
 - structure node is created.
 
+```
+if (n != NULL)
+{
+	(*n).number = 1;
+}
+
+// same as
+
+if (n != NULL)
+{
+	n ->number = 1;
+}
+```
+
+```
+if (n != NULL)
+{
+	n ->next = NULL;
+}
+```
+
 ## Linked list demo
 
 - you need a pointer to start, to point at the first node
@@ -99,12 +120,21 @@ if (n != NULL)
 O(n)
 - Running time of inserting into a linked list
 0(1)
-	- if you don't care about sorted order.
-
-Break: min 43
-
+	- if you don't care about sorted order and just want to insert it (for example at the start.)
+	- constant time if you don't care about the order.
 
 ## realloc()
 - will hand you a new chunk of memory that will be big enough for the new values.
 
-Break min 58.
+---
+
+- orders of operation matter
+- don't orphan nodes
+
+```
+n->next = list;
+list = n;
+```
+
+---
+1:20

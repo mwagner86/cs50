@@ -1,3 +1,5 @@
+// This is just a demonstration, not a working program.
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,7 +32,6 @@ if (n != NULL)
 {
 	n->number = 2; 
 	n->next = NULL;
-
 }
 
 list->next = n;
@@ -40,5 +41,5 @@ if (n != NULL)
 	n->number = 3; 
 	n->next = NULL;
 }
-list->next->next = n;
+list->next->next = n; // arrows are code manifestation of: -> "Follow the pointer" -> "Follow the pointer"
 }

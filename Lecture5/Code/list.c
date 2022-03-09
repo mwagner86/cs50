@@ -21,11 +21,12 @@ int main(void)
 {
 	int *list;
 
-	list = malloc(3 * sizeof(int));
-	if (list == NULL)
+	list = malloc(3 * sizeof(int)); // allocates memory 3 * the size of an int time variable
+	if (list == NULL) // check if memory allocation failed and if so quit program.
 	{
 		return 1;
 	}
+	// square bracket notation compared to pointer arithmetics.
 	list[0] = 1;	// *list = 1;
 	list[1] = 2;	// *(list + 1) = 2;
 	list[2] = 3;	// *(list + 2) = 3;
