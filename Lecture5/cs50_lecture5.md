@@ -29,8 +29,8 @@ O(n)
 
 
 - struct
-- . - dot operator
-- * - dereference operator
+-	. dot operator
+-	* dereference operator
 
 - -> . and * operator combined
 - 0x0 = NULL, absence of an address
